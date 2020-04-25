@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ecommerce</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+   <div class="big">
+    <div class="topheader bg-primary">
+        <ul>
+            <li class="toplist"><a class="toplink">WELCOME MESSAGE</a></li>
+            <li class="toplist"><a class="toplink">MY ACCOUNT</a></li>
+            <li class="toplist"><a class="toplink">DAILY DEAL</a></li>
+            <li class="toplist"><a class="toplink">DAILY DEAL</a></li>
+            <li class="toplist"><a class="toplink">BLOG</a></li>
+            <li class="toplist"><a class="toplink">CONTACT</a></li>
+            <li class="toplist"><a class="toplink">LOGIN</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div class="row bg-primary" style="margin:0%;" >
+            <div class="col-md-2">
+                <img src="~/images/walmart-ecommerce-logo.jpg" alt="pic" id="logo">
+            </div>
+            <div class="col-md-5" style="margin-top: 20px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="SEARCH HERE" id="mail" name="email" style=" border-radius: 50px 0px 0px 50px;">
+                    <div class="input-group-append">
+                        <span id="span" class="input-group-text" style="background-color: white;">
+                            <select id="cars"  style="color:red;width:200px;border:1px solid white">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="input-group-append">
+                        <span id="span" class="input-group-text" style="background-color:white ;border-radius: 0px 50px 50px 0px; "><i style='font-size:24px;' class='fas'>&#xf002;</i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <i style='font-size:60px;color:white;padding-left:100px;line-height:60px' class='fas'>&#xf2a0;</i><span style="color:white">call us on</span>
+                <p style="color:white;padding-left:100px">009908--8089</p>
+            </div>
+            <div class="col-md-2">
+                <i id="shop"  class='fas'>&#xf290;</i>
+            </div>
+            
+    </div>
+    <nav class=" navbar navbar-expand-sm sticky-top">
+            <button class="tog" id="butt"></button>
+            <div>
+                <ul id="primaryNav" class="closed">
+                    <li><a href="#">HOME</a>
+                    </li>
+                    <li><a href="#">CATEGORIES</a>
+                        <ul class="category">
+                            <div class="row" style="background-color: black;">
+                                <div class="col-md-4">
+                                    <li><a href="#">kumasi</a></li>
+                                    <li><a href="#">Accra</a></li>
+                                    <li><a href="#">Tamale</a></li>
+                                    <li><a href="#">Tema</a></li>
+                                </div>
+                                <div class="col-md-4">
+                                    <li><a href="#">kumasi</a></li>
+                                    <li><a href="#">Accra</a></li>
+                                    <li><a href="#">Tamale</a></li>
+                                    <li><a href="#">Tema</a></li>
+                                </div>
+                                
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">PRODUCTS</a>
+                        <ul>
+                            <li><a href="#">kumasi</a></li>
+                            <li><a href="#">Accra</a></li>
+                            <li><a href="#">Tamale</a></li>
+                            <li><a href="#">Tema</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PAGES</a>
+                        <ul>
+                            <li><a href="#">kumasi</a></li>
+                            <li><a href="#">Accra</a></li>
+                            <li><a href="#">Tamale</a></li>
+                            <li><a href="#">Tema</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">FEATURES</a>
+                        <ul>
+                            <li><a href="#">kumasi</a></li>
+                            <li><a href="#">Accra</a></li>
+                            <li><a href="#">Tamale</a></li>
+                            <li><a href="#">Tema</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mobile" style="background-color: #0043A4; opacity:0.9;">
+        <div class="row" id="row">
+            <div class="col-sm-4 col-offset-4">
+                <div class="dropdown" style="float:right;">
+                    <a class="dropbtn">Links</a><i class="fa fa-caret-down" style="color:white;"></i>
+                    <div class="dropdown-content">
+                        <a href="#">MY ACCOUNT</a>
+                        <a href="#">LOGIN</a>
+                        <a href="#">DAILY DEAL</a>
+                        <a href="#">BLOG</a>
+                        <a href="#">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div><hr style="color: white;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="bar">
+            <img src="~/images/walmart-ecommerce-logo.jpg" alt="pic" id="logo">
+            <i id="shop" onclick="OpenShop()" class='fas'>&#xf290;</i>
+            <nav id="shopContent">
+                <a id="xclose" href="javascript:void(0)" class="closeshop" onclick="closeShop()">&times;</a>
+                <div id="inshop">
+                    <li>place</li>
+                    <li>home</li>
+                </div>
+            </nav>
+            <span id="openIcon" onclick="openNav()">&#9776;</span>
+            <i onclick="OpenSearch()" id="searchIcon" class="fa">&#xf002;</i>
+            <div id="search">
+            <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="SEARCH HERE" id="searchvalue" name="mail" style="display:none;border-radius: 50px 0px 0px 50px">
+                    <div class="input-group-append">
+                        <span id="Open" class="input-group-text" style="background-color:white;display:none;border-radius: 0px 50px 50px 0px;"><i id="span" style='font-size:24px;color:black' class='fas'>&#xf002;</i></span>
+                        <a href="javascript:void(0)" onclick="closeSearch()"  id="xSearch"  style='display:none;font-size:24px;color:white;margin-left:20px;' >&times;</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="background-image:url(@ViewBag.background);" id="index">
+        <main role="main" class="pb-3" >
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <h3 class="thick space">CONTACT US</h3>
+                    <h5 class="sthick">ADDRESS</h5>
+                    <p class="light">walmart-ecommerce-logo</p>
+                    <h3 class="sthick">PHONE</h3>
+                    <p class="light">Toll Freee 9-185-8951</p>
+                    <h3 class="sthick">EMAIL</h3>
+                    <p class="light">gyankoissah88@gmail.com</p>
+                    <h3 class="sthick">WORKING HOURS</h3>
+                    <p class="light">MONDAY-FRIDAY 9:30-5;30</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                             <h3 class="thick space">SUBSCRIBE TO NEWSLETTER</h3>
+                             <p class="light">Get all the latest information on Events,Sales and Offers. Sign up for newsletter today</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group mb-3 space">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Go</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><hr class="hspace">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                                <h3 class="thick">MY ACCOUNT</h3>
+                                <p class="light">contact us</p>
+                                <p class="light">About us</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                                <p class="light">contact us</p>
+                                <p class="light">About us</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                                <h3 class="thick">MAIN FEATURES</h3>
+                                <p class="light">contact us</p>
+                                <p class="light">About us</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                                <p class="light">contact us</p>
+                                <p class="light">About us</p>
+                        </div>
+                    </div><hr class="hspace">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
